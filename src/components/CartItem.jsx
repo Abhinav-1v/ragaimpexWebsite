@@ -23,7 +23,7 @@ export default function CartItem({ item, onQtyChange, onRemove }) {
             </button>
           </div>
 
-          <strong>${item.price * item.quantity}</strong>
+          <strong>₹{item.price * item.quantity}</strong>
         </div>
       </div>
 

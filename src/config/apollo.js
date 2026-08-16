@@ -1,4 +1,4 @@
-﻿import { ApolloClient, ApolloLink, HttpLink, InMemoryCache, from } from '@apollo/client'
+import { ApolloClient, ApolloLink, HttpLink, InMemoryCache, from } from '@apollo/client'
 import { onError } from '@apollo/client/link/error'
 
 const graphqlUri = import.meta.env.VITE_GRAPHQL_URI || 'https://countries.tld/graphql'

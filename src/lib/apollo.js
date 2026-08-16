@@ -1,1 +1,1 @@
-﻿export { apolloClient, createApolloClient } from '../config/apollo'
+export { apolloClient, createApolloClient } from '../config/apollo'

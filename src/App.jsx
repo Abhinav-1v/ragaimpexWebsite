@@ -1,5 +1,5 @@
 import { ApolloProvider } from "@apollo/client/react";
-import { apolloClient } from "./config/apollo";
+import { apolloClient } from "./config/apolloClient";
 import AppRouter from "./routing/AppRouter";
 
 export default function App() {
