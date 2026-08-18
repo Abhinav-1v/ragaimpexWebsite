@@ -96,7 +96,7 @@ export default function ContactPage() {
             <div className="mx-auto inline-flex h-30 w-48 items-center justify-center rounded-2xl bg-white p-2.5 animate-streeplus-float animate-streeplus-glow">
               <img src="/images/streeplus_logo.avif" alt="Streeplus logo" className="h-25 w-40 object-contain" />
             </div>
-            <h1 className="mt-4 text-2xl font-bold tracking-tight text-emerald-800">
+            <h1 className="mt-4 text-2xl font-bold tracking-tight text-emerald-800 pt-3">
               STREEPLUS&trade;
             </h1>
             <p className="mt-3 font-mono text-[12.5px] leading-relaxed text-stone-600">
@@ -183,7 +183,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
           {/* left: quick contact cards */}
           <Reveal>
-            <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-emerald-700">
+            <span className="font-mono text-[20px] font-medium uppercase tracking-widest text-emerald-700">
               Contact
             </span>
             <h2 className="mt-2 text-2xl font-bold text-stone-900 sm:text-3xl">

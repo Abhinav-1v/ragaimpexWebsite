@@ -77,10 +77,10 @@ export default function PartnerPage() {
               className="h-32 w-50 object-contain"
             />
           </div>
-          <h1 className="mt-6 text-3xl font-bold tracking-tight text-emerald-800 sm:text-4xl">
+          <h1 className="mt-6 pt-5 pb-1 text-3xl font-bold tracking-tight text-emerald-800 sm:text-4xl">
             {PARTNER_CONTENT.hero.heading}
           </h1>
-          <p className="mt-4 font-mono text-[13px] text-emerald-700">
+          <p className="mt-4 font-mono text-[20px] text-emerald-700">
             {PARTNER_CONTENT.hero.tags.join('  \u2022  ')}
           </p>
         </Reveal>
@@ -89,7 +89,7 @@ export default function PartnerPage() {
       {/* ---------------- Main card ---------------- */}
       <section className="mx-auto max-w-full px-4 py-14 sm:px-6 sm:py-16">
         <Reveal className="rounded-[2rem] border border-stone-200 bg-white p-6 shadow-sm sm:p-12">
-          <h2 className="text-2xl font-bold text-emerald-800 sm:text-3xl">
+          <h2 className="text-2xl font-bold text-emerald-800 sm:text-3xl pb-5">
             {PARTNER_CONTENT.intro.heading}
           </h2>
           <RichText
@@ -105,7 +105,7 @@ export default function PartnerPage() {
             />
           </div>
 
-          <h2 className="mt-12 text-2xl font-bold text-emerald-800 sm:text-3xl">
+          <h2 className="mt-12 text-2xl font-bold text-emerald-800 sm:text-3xl pt-20 pb-5">
             {PARTNER_CONTENT.collaboration.heading}
           </h2>
           <RichText
@@ -123,17 +123,27 @@ export default function PartnerPage() {
               {PARTNER_CONTENT.cta.heading}
             </h3>
 
-            <p className="mt-5 text-[14px] text-stone-700">
+            <div className="mt-5 text-[14px] text-stone-700">
               <span className="font-semibold text-stone-900">Email: </span>
+
               {PARTNER_CONTENT.cta.emails.map((email, index) => (
-                <span key={email}>
-                  <a href={`mailto:${email}`} className="text-emerald-700 underline underline-offset-2 hover:text-emerald-800">
+                <span
+                  key={email}
+                  className="inline-flex max-w-full items-center whitespace-nowrap"
+                >
+                  <a
+                    href={`mailto:${email}`}
+                    className="text-emerald-700 underline underline-offset-2 hover:text-emerald-800"
+                  >
                     {email}
                   </a>
-                  {index < PARTNER_CONTENT.cta.emails.length - 1 && <span className="mx-1.5 text-stone-400">|</span>}
+
+                  {index < PARTNER_CONTENT.cta.emails.length - 1 && (
+                    <span className="mx-1.5 text-stone-400">|</span>
+                  )}
                 </span>
               ))}
-            </p>
+            </div>
 
             <p className="mt-2 text-[14px] text-stone-700">
               <span className="font-semibold text-stone-900">Mobile: </span>

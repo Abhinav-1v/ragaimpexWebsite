@@ -133,7 +133,7 @@ export default function ImpactPage() {
                 }`}
               >
                 <Reveal>
-                  <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-emerald-700">
+                  <span className="font-mono text-[20px] font-medium uppercase tracking-widest text-emerald-700">
                     {stage.label}
                   </span>
                   <h2 className="mt-2 text-2xl font-bold text-stone-900 sm:text-3xl">

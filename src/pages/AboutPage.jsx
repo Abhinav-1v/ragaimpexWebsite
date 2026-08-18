@@ -35,7 +35,7 @@ export default function AboutPage() {
       <section className="mx-auto max-w-full px-6 pb-16 pt-16 sm:pt-24">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>
-            <Badge className="rounded-full bg-emerald-50 px-3 py-1 font-mono text-[11px] font-medium tracking-wide text-emerald-800 hover:bg-emerald-50">
+            <Badge className="rounded-full bg-emerald-50 px-3 py-1 font-mono text-[20px] font-medium tracking-wide text-emerald-800 hover:bg-emerald-50 mb-5">
               {ABOUT_CONTENT.eyebrow}
             </Badge>
             <h1 className="mt-5 font-display text-4xl font-bold tracking-tight text-emerald-700 sm:text-5xl">
@@ -137,19 +137,19 @@ export default function AboutPage() {
       </section>
 
       {/* ---------------- Leadership team ---------------- */}
-      {TEAM_MEMBERS.length > 0 ?? (
+      {TEAM_MEMBERS.length > 0 && (
       <section className="mx-auto max-w-full px-6 pb-24">
         <Reveal className="text-center">
-          <Badge className="rounded-full bg-emerald-50 px-3 py-1 font-mono text-[11px] font-medium tracking-wide text-emerald-800 hover:bg-emerald-50">
+          <Badge className="rounded-full bg-emerald-50 px-3 py-1 font-mono text-[20px] font-medium tracking-wide text-emerald-800 hover:bg-emerald-50 mb-5">
             {ABOUT_CONTENT.team.eyebrow}
           </Badge>
           <h2 className="mt-4 text-2xl font-bold text-stone-900 sm:text-3xl">
             Meet the people driving {COMPANY_INFO.shortName}.
           </h2>
         </Reveal>
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 flex flex-wrap justify-center gap-6 text-center">
           {TEAM_MEMBERS.map((member, index) => (
-            <Reveal key={member.email} delay={index * 90}>
+            <Reveal key={member.email} delay={index * 90} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
               <Card className="h-full overflow-hidden border-stone-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                 <div className="aspect-[4/3] overflow-hidden bg-stone-100">
                   <img
@@ -159,11 +159,28 @@ export default function AboutPage() {
                   />
                 </div>
                 <CardContent className="p-5">
-                  <p className="text-[15px] font-semibold text-stone-900">{member.name}</p>
-                  <p className="mt-0.5 text-[13px] font-medium text-emerald-700">{member.role}</p>
+                  <p className="text-[15px] font-semibold text-stone-900">
+                    {member.name}
+                  </p>
+
+                  <p className="mt-0.5 text-[13px] font-medium text-emerald-700">
+                    {member.role}
+                  </p>
+
                   <div className="mt-3 space-y-0.5 font-mono text-[12px] text-stone-500">
-                    <p>{member.phone}</p>
-                    <p>{member.email}</p>
+                    <a
+                      href={`tel:${member.phone}`}
+                      className="block text-emerald-600 hover:underline"
+                    >
+                      {member.phone}
+                    </a>
+
+                    <a
+                      href={`mailto:${member.email}`}
+                      className="block text-emerald-600 hover:underline"
+                    >
+                      {member.email}
+                    </a>
                   </div>
                 </CardContent>
               </Card>
