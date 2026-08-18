@@ -26,7 +26,7 @@ export default function Footer() {
                 {FOOTER_CONFIG.heading}
               </h2>
 
-              <div className="mt-6 space-y-1 font-mono text-[13px] text-stone-700">
+              <div className="mt-6 w-full space-y-1 font-mono text-center text-[13px] text-stone-700">
                 <p className="font-semibold text-stone-900">
                   {FOOTER_CONFIG.corpOfficeLabel}
                 </p>
@@ -34,7 +34,7 @@ export default function Footer() {
                 <p>{CONTACT_DETAILS.addressLine2}</p>
               </div>
 
-              <div className="mt-4 space-y-1 font-mono text-[13px] text-stone-700">
+              <div className="mt-4 w-full space-y-1 font-mono text-center text-[13px] text-stone-700">
                 <p className="font-semibold text-stone-900">
                   {FOOTER_CONFIG.factoryUnitLabel}
                 </p>
