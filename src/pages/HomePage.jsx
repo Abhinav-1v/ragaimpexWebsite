@@ -40,7 +40,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-full px-6 pb-16 pt-14 sm:pt-20">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal>
-            <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-emerald-700">
+            <span className="font-mono text-[20px] font-medium uppercase tracking-widest text-emerald-700">
               {HOME_CONTENT.hero.eyebrow}
             </span>
             <h1 className="mt-4 font-display text-[2.6rem] font-semibold leading-[1.12] tracking-tight text-stone-900 sm:text-[3.5rem] lg:text-6xl">
@@ -54,7 +54,7 @@ export default function HomePage() {
               </span>
               <span className="text-stone-600">{HOME_CONTENT.hero.headingLine2Suffix}</span>
             </h1>
-            <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-stone-600">
+            <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-stone-600 pt-5">
               {HOME_CONTENT.hero.subheading}
             </p>
 
@@ -74,7 +74,7 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <div className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-[12px] text-stone-500">
+            <div className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-[16px] text-stone-500">
               <span className="font-mono uppercase tracking-widest text-stone-400">
                 {HOME_CONTENT.hero.trustLine}
               </span>
@@ -107,7 +107,7 @@ export default function HomePage() {
                 <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-emerald-50 text-emerald-700">
                   <Icon size={18} />
                 </span>
-                <span className="text-[13px] font-semibold text-stone-800">{item.label}</span>
+                <span className="text-[16px] font-semibold text-stone-800">{item.label}</span>
               </Reveal>
             )
           })}
@@ -132,7 +132,7 @@ export default function HomePage() {
           </Reveal>
 
           <Reveal delay={120}>
-            <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-emerald-700">
+            <span className="font-mono text-[20px] font-medium uppercase tracking-widest text-emerald-700">
               {HOME_CONTENT.about.eyebrow}
             </span>
             <h2 className="mt-2 text-3xl font-bold text-emerald-800">{HOME_CONTENT.about.heading}</h2>
@@ -286,7 +286,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-full px-6 pb-24">
         <Reveal className="flex flex-col items-center justify-between gap-6 rounded-[2rem] bg-stone-900 px-8 py-14 text-center sm:flex-row sm:text-left sm:px-14">
           <div>
-            <span className="font-mono text-[11px] font-medium uppercase tracking-widest text-emerald-300">
+            <span className="font-mono text-[20px] font-medium uppercase tracking-widest text-emerald-300">
               {HOME_CONTENT.cta.eyebrow}
             </span>
             <h2 className="mt-2 max-w-md text-xl font-bold text-white sm:text-2xl">
